@@ -1,11 +1,72 @@
 {% extends 'base.html' %}
-{% block title %}Dashboard{% endblock title %}
+{% load static %} 
+{% block title %}Dashboard{% endblock title %} 
 
 {% block content %}
+<link rel="stylesheet" href={% static 'css/dashboard.css' %}>
+<aside
+  class="sidebar position-fixed top-0 left-0 overflow-auto h-100 float-left"
+  id="show-side-navigation1"
+>
+  <i
+    class="uil-bars close-aside d-md-none d-lg-none"
+    data-close="show-side-navigation1"
+  ></i>
+  <div
+    class="sidebar-header d-flex justify-content-center align-items-center px-3 py-4"
+  >
+    <div class="image">
+      <img
+        class="rounded-pill img-fluid"
+        width="65"
+        src="https://images.unsplash.com/photo-1646236180099-24705b602429?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1964&q=80"
+        alt="profile image"
+      />
+      <h5 class="fs-6 mb-0 mt-3">
+        <a class="text-decoration-none" href="#">{{req.user}}</a>
+      </h5>
+    </div>
 
-    <h1>
-        HOMEPAGE
-        {{req.user}}
-    </h1>
+  </div>
 
+  {% comment %}
+  <div class="search position-relative text-center px-4 py-3 mt-2">
+    <input
+      type="text"
+      class="form-control w-100 border-0 bg-transparent"
+      placeholder="Search here"
+    />
+    <i class="fa fa-search position-absolute d-block fs-6"></i>
+  </div>
+  {% endcomment %}
+
+  <ul class="categories list-unstyled">
+    <li class="has-dropdown">
+      <i class="uil-estate fa-fw"></i><a href="#"> Menu content button</a>
+    </li>
+    <li class=""><i class="uil-folder"></i><a href="#"> Menu content button</a></li>
+    <li class="has-dropdown">
+      <i class="uil-calendar-alt"></i><a href="#"> Menu content button</a>
+    </li>
+    <li class="has-dropdown">
+      <i class="uil-envelope-download fa-fw"></i><a href="#"> Menu content button</a>
+    </li>
+    <li class="has-dropdown">
+      <i class="uil-shopping-cart-alt"></i><a href="#"> Menu content button</a>
+    </li>
+    <li class="has-dropdown">
+      <i class="uil-bag"></i><a href="#"> Menu content button</a>
+    </li>
+    <li class=""><i class="uil-setting"></i><a href="#"> Menu content button</a></li>
+    <li class="has-dropdown">
+      <i class="uil-chart-pie-alt"></i><a href="#"> Menu content button</a>
+    </li>
+    <li class="has-dropdown">
+      <i class="uil-panel-add"></i><a href="#"> Menu content button</a>
+    </li>
+    <li class=""><i class="uil-map-marker"></i><a href="#"> Menu content button</a></li>
+  </ul>
+</aside>
+
+<script src="js/dashboard.js"></script>
 {% endblock content %}
