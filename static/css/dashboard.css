@@ -30,6 +30,7 @@ body {
 }
 
 .sidebar {
+	position: fixed;
 	background-color: var(--sidebar-bg-color);
 	width: var(--sidebar-width);
 	height: 100vh;
@@ -88,6 +89,13 @@ body {
 	margin-right: .7rem;
 	color: var(--dk-gray-500);
 }
+
+.main{
+	margin-left: calc(var(--sidebar-width) + 10px);
+	z-index: 100;
+}
+
+
 
 @media (max-width: 767px) {
 	.sidebar ul > li {

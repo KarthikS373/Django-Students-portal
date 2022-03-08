@@ -68,5 +68,10 @@
   </ul>
 </aside>
 
-<script src="js/dashboard.js"></script>
+<section class="main">
+    {% block MainContent %}
+    {% endblock MainContent %}
+</section>
+
+{% comment %} <script src="js/dashboard.js"></script> {% endcomment %}
 {% endblock content %}

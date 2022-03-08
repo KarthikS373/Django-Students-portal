@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.home-content-box{
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-top: 3em;
+    color: white;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    row-gap: 3em;
+    column-gap: 5em;
+}
+
+.home-tabs{
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding: 10px;
+}
+
+
+.home-tabs img{
+    max-width: 100px;
+}
+
+.home-content-box .big__tab{
+    grid-column: 3 / span 1;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+
+
+
+
+
+
+
+
+

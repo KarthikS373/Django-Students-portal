@@ -7,4 +7,10 @@ def Home(request):
     context = {
         'req' : request
     }
-    return render(request, "dashboard.html", context)
+    return render(request, "homePage.html", context)
+
+def homework(request):
+    context = {
+        
+    }
+    return render(request, "homework.html", context)
