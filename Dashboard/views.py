@@ -11,6 +11,6 @@ def Home(request):
 
 def homework(request):
     context = {
-        
+        'req' : request
     }
     return render(request, "homework.html", context)

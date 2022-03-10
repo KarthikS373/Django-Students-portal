@@ -1,0 +1,17 @@
+{% extends 'dashboard.html' %}
+{% load static %}
+{% block userName %}
+    {{req.user}}
+{% endblock userName %}
+
+{% block MainContent %}
+    <link rel="stylesheet" href="{% static 'css/homework.css' %}">
+    <div class="hw__topBar">HomeWork</div>
+
+    <div class="hw__sections">
+        <div class="hw__section major">Major</div>
+        <div class="hw__section top">Top</div>
+        <div class="hw__section bottom">Bottom</div>
+    </div>
+
+{% endblock MainContent %}

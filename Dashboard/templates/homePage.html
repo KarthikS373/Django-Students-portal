@@ -1,6 +1,10 @@
 {% extends 'dashboard.html' %}
 {% load static %}
 
+{% block userName %}
+    {{req.user}}
+{% endblock userName %}
+
 {% block MainContent %}
 <link rel="stylesheet" href="{% static 'css/homePage.css' %}">
 <div class="home-content-box">
